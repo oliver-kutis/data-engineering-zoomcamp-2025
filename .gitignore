@@ -65,7 +65,8 @@ coverage.xml
 **/docker-compose.override.override.yaml
 
 # Docker volumes and data
-**/ny_taxi_postgres_data/
+**/volumes/
+**/data/
 
 # Logs and databases
 *.log
