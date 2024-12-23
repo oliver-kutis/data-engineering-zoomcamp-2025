@@ -29,26 +29,26 @@ services:
       interval: 5s
       retries: 5
     restart: always
-  ingest-data:
-    container_name: ingest-data
-    image: taxi_ingest_data:v001
-    networks:
-      - pg-network
-    depends_on:
-      postgres:
-        condition: service_healthy
-    volumes:
-      - ./scripts:/app
-    command:
-      - "--user=root"
-      - "--password=root"
-      - "--host=postgres"
-      - "--port=5432"
-      - "--db=ny_taxi"
-      - "--table_name=taxi_trips"
-      - "--parquet_file_url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
-      - "--parquet_file_name=./data/yellow_tripdata_2021-01.parquet"
-      - "--load_batch_size=300000"
+  # ingest-data:
+  #   container_name: ingest-data
+  #   image: taxi_ingest_data:v001
+  #   networks:
+  #     - pg-network
+  #   depends_on:
+  #     postgres:
+  #       condition: service_healthy
+  #   volumes:
+  #     - ./scripts:/app
+  #   command:
+  #     - "--user=root"
+  #     - "--password=root"
+  #     - "--host=postgres"
+  #     - "--port=5432"
+  #     - "--db=ny_taxi"
+  #     - "--table_name=taxi_trips"
+  #     - "--parquet_file_url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
+  #     - "--parquet_file_name=./data/yellow_tripdata_2021-01.parquet"
+  #     - "--load_batch_size=300000"
 
 # volumes:
 #   ny_taxi_pg_data:
