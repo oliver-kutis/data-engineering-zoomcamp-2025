@@ -39,7 +39,7 @@ provider "google" {
 }
 
 # Create a GCS bucket
-resource "google_storage_bucket" "demo_bucket" {
+resource "google_storage_bucket" "ny_taxi_bucket" {
   name          = var.gcp.storage.name
   location      = var.gcp.location
   storage_class = var.gcp.storage.storage_class
@@ -65,7 +65,7 @@ resource "google_storage_bucket" "demo_bucket" {
 }
 
 # Create a BigQuery dataset 
-resource "google_bigquery_dataset" "demo_dataset" {
+resource "google_bigquery_dataset" "ny_taxi_dataset" {
   dataset_id    = var.gcp.bigquery.dataset_id
   friendly_name = var.gcp.bigquery.friendly_name
   description   = var.gcp.bigquery.description
