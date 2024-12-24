@@ -28,13 +28,13 @@ variable "gcp" {
     location = "EU"
     region   = "europe-west1"
     bigquery = {
-      dataset_id    = "demo_dataset"
-      friendly_name = "demo_dataset"
+      dataset_id    = "ny_taxi"
+      friendly_name = "NY taxi trips"
       description   = "Demo dataset description"
     }
     storage = {
-      name        = "tf-demo-bucket-data-engineering-zoomcamp-2025"
-      description = "Demo bucket description"
+      name        = "tf-ny-taxi-bucket-data-engineering-zoomcamp-2025"
+      description = "NY taxi trips data bucket"
       lifecycle_rule = {
         age = 30 # days
       }
