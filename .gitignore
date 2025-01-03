@@ -9,6 +9,7 @@ venv/
 
 # Distribution / packaging
 .Python
+dbt_env/
 build/
 develop-eggs/
 dist/
@@ -23,6 +24,7 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+.gitkeep
 
 # PyInstaller
 # Usually these files are written by a python script from a template
@@ -121,3 +123,5 @@ Thumbs.db
 
 # json
 *.json
+4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/.gitignore
+4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/README.md

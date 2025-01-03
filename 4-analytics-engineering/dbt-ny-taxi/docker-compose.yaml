@@ -1,0 +1,12 @@
+services:
+  dbt-bigquery:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: dbt-bigquery
+    # image: dbt/bigquery
+    volumes:
+      - .:/usr/app
+      - ~/.dbt:/root/.dbt
+      - ~/.google/credentials/data-engineering-zoomcamp-2025-service-account.json:/.google/credentials/google_credentials.json
+    command: /bin/bash -c "while true; do sleep 30; done;"
