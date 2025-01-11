@@ -123,5 +123,13 @@ Thumbs.db
 
 # json
 *.json
+
+# Specifics
 4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/.gitignore
 4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/README.md
+
+5-batch/*.csv*
+5-batch/**/*.parquet*
+*_SUCCESS*
+
+
