@@ -29,6 +29,10 @@ clean-targets: # directories to be removed by `dbt clean`
 # files using the `{{ config(...) }}` macro.
 models:
   taxi_rides_ny:
-    # Config indicated by + and applies to all files under models/example/
-    example:
-      +materialized: view
+    seeds:
+      +docs:
+        show: false
+  # Hide dbt_utils package from the documentation site
+  dbt_utils:
+    +docs:
+      show: false

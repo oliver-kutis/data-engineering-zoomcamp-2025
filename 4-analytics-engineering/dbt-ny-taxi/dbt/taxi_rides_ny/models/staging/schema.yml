@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: staging
+    database: data-engineering-zoomcamp-2025
+    schema: nyc_tripdata
+    tables:
+      - name: green_tripdata
+      - name: yellow_tripdata

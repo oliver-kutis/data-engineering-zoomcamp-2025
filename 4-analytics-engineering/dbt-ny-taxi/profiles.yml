@@ -1,4 +1,5 @@
 bq-dbt-workshop:
+  target: dev
   outputs:
     dev:
       dataset: nyc_tripdata
@@ -11,4 +12,5 @@ bq-dbt-workshop:
       threads: 4
       timeout_seconds: 300
       type: bigquery
-  target: dev
+    prod:
+      

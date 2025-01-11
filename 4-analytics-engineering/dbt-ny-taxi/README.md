@@ -1,4 +1,4 @@
-# dbt with BigQuery (or other service) on Docker
+cd# dbt with BigQuery (or other service) on Docker
 
 This file is a changed version from here: https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/04-analytics-engineering/docker_setup/README.md
 
