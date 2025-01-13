@@ -20,7 +20,7 @@ services:
       POSTGRES_PASSWORD: root
       POSTGRES_DB: ny_taxi
     ports:
-      - 5432:5432
+      - 5433:5432
     networks:
       - pg-network
     volumes:
@@ -50,7 +50,6 @@ services:
   #     - "--parquet_file_url=https://d37ci6vzurychx.cloudfront.net/trip-data/yellow_tripdata_2021-01.parquet"
   #     - "--parquet_file_name=./data/yellow_tripdata_2021-01.parquet"
   #     - "--load_batch_size=300000"
-
 # volumes:
 #   ny_taxi_pg_data:
 #     driver: local
@@ -66,7 +65,7 @@ services:
 #       device: ./volumes/pgadmin-data
 #   ingest-scripts:
 
-networks:
-  pg-network:
-    driver: bridge
-    name: pg-network
+# networks:
+#   pg-network:
+#     driver: bridge
+#     name: pg-network
