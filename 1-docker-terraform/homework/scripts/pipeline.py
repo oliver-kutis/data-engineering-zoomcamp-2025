@@ -31,6 +31,10 @@ def main(params):
     else:
         df = pd.read_csv(csv_file_name, encoding='utf-8', low_memory=False)
 
+    for col in ['lpep_pickup_datetime', 'lpep_dropoff_datetime']:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col])
+
     # Create schema for the table
     df.head(0).to_sql(table_name, con=engine,
                       index=False, if_exists='replace')
