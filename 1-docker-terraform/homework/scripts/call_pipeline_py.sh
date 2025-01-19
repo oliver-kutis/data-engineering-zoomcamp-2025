@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# cd into the directory where the Python script is located
+cd ~/Documents/Github/data-engineering-zoomcamp/1-docker-terraform/homework/scripts
+
 # Define the Python script and the argument
 PYTHON_SCRIPT="pipeline.py"
 
