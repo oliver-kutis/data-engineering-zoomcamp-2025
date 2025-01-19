@@ -125,6 +125,8 @@ Thumbs.db
 *.json
 
 # Specifics
+**/ny_taxi_postgres_data/** 
+
 4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/.gitignore
 4-analytics-engineering/dbt-ny-taxi/dbt/taxi_rides_ny/README.md
 
