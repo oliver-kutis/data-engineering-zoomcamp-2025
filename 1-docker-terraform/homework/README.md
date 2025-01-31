@@ -1,4 +1,6 @@
-# How to make sense of this HW
+# Module 1 homework: Docker & Terraform Ho
+
+## How to make sense of this HW
 
 1. Used docker compose provided in the Homework
 2. `pipeline.py` is called by `call_pipeline_py.sh`
@@ -13,4 +15,4 @@
 > **Note: The answers are tied up to the questions at the time.**
 
 - Questions can be found at this [url](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/cohorts/2025/01-docker-terraform/homework.md#question-3-trip-segmentation-count)
-- The submitted (don't know yet if correct) answers are in the `homework.md` file
+- The answers in the `homework.md` file are correct
